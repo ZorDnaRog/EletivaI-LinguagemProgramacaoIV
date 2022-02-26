@@ -11,7 +11,16 @@
     <title>Hello, world!</title>
   </head>
   <body>
-    <h1>Hello, world!</h1>
+    <h1>Cálculos</h1>
+
+    <?php
+      $valor1 = $_POST['valor1']; // Para identificar os valores na pagina que recebe os dados utilize o "name" dos inputs.EX.valor 1 esta no input do arquivo index.php
+      $valor2 = $_POST['valor2'];
+      echo "valor 1 é: $valor1 e Valor 2 é: $valor2";
+      echo "<br/>";
+      echo "valor 1 + valor 2 é :".$valor1 + $valor2;
+      
+    ?>
 
     <!-- Optional JavaScript; choose one of the two! -->
 
