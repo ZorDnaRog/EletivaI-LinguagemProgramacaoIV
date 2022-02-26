@@ -16,10 +16,28 @@
   <h1>Cálculos</h1>
 
   <?php
-    echo "Os valores informados foram: Valor 1 [$valor1] Valor 2 [$valor2]";
+    $variavel_valor1 = $_POST["valor1"];
+    $variavel_valor2 = $_POST["valor2"];
+    echo"Os valores digitados foram: Valor 1 [$variavel_valor1] e Valor 2 [$variavel_valor2]";
+    $soma = $variavel_valor1 + $variavel_valor2;
+    $subtracao = $variavel_valor1 - $variavel_valor2;
+    $divisao = $variavel_valor1 / $variavel_valor2;
 
+    if($variavel_valor1 % 2 == 0){
+      echo "O valor 1 é Par";
+    } else{
+      echo "O valor 1 é Impar";
+    }
+
+    if($variavel_valor1 % 2 == 0){
+      echo "O valor 2 é Par";
+    } else{
+      echo "O valor 2 é Impar";
+    }
 
   ?>
+
+  
 
   <!-- Optional JavaScript; choose one of the two! -->
 
