@@ -12,7 +12,7 @@
     <title>Hello, world!</title>
 </head>
 
-<body>
+<body class="container">
     <h1>Exemplo de Envio de Formulario</h1>
 
     <form>
