@@ -15,7 +15,7 @@
 <body class="container">
     <h1>Exemplo de Envio de Formulario</h1>
 
-    <form method="post"> <!-- A utilização de GET no lugar de POST implica na exibição dos dados inseridos na URL -->
+    <form action="resposta.php" method="post"> <!-- A utilização de GET no lugar de POST implica na exibição dos dados inseridos na URL -->
         <div class="row">
             <div class="col">
                 <label for="valor1" class="label-control">Informe o valor 1</label>
