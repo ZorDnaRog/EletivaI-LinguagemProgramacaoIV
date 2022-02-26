@@ -15,15 +15,22 @@
 <body class="container">
     <h1>Exemplo de Envio de Formulario</h1>
 
-    <form>
+    <form method="post"> <!-- A utilização de GET no lugar de POST implica na exibição dos dados inseridos na URL -->
         <div class="row">
             <div class="col">
-                <label for="valor1" class="label-control">Informe o valor 1</label>                
-                <input type="number" name="valor1" id="valor1" class="form-control"/>
+                <label for="valor1" class="label-control">Informe o valor 1</label>
+                <input type="number" name="valor1" id="valor1" class="form-control" />
             </div>
             <div class="col">
-                <label for="valor2" class="label-control">Informe o valor 2</label>                
-                <input type="number" name="valor2" id="valor2" class="form-control"/>
+                <label for="valor2" class="label-control">Informe o valor 2</label>
+                <input type="number" name="valor2" id="valor2" class="form-control" />
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col">
+                <button type="submit" class="btn btn-danger">
+                    Enviar
+                </button>
             </div>
         </div>
 
