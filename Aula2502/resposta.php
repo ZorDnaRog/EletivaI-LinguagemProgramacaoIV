@@ -25,9 +25,14 @@
     echo "<br>";
     echo "A subtração dos valores é: ",$variavel_valor1 - $variavel_valor2;
     echo "<br>";
-    printf("A divisão dos valores é: %.3f",$variavel_valor1 / $variavel_valor2);
+    if ($valor2 != 0){
+      echo "Divisão".($valor1 / $valor2);
+    }
+    else{
+      echo "Não é possivel divisão por zero!";
+    }
     echo "<br>";
-    echo !($variavel_valor1 % 2) ? "O valor 1 é par" : "O valor 1 é ímpar";
+    echo !($variavel_valor1 % 2) ? "O valor 1 é par" : "O valor 1 é ímpar"; // Operador ternário
     echo "<br>";
     echo !($variavel_valor2 % 2) ? "O valor 2 é par" : "O valor 2 é ímpar";   
 
