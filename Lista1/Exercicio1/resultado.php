@@ -13,17 +13,19 @@
 </head>
 
 <body class="container">
-  <h1>Programa para calcular troco</h1>
+  <h1>Cálculos</h1>
 
   <?php
 
-  $x = $_POST["valorpago"];
-  $y = $_POST["precoproduto"];
+    $pagamento = $_POST["valorpago"];
+    $preco = $_POST["precoproduto"];
 
-  echo "O preço do produto é : $y e o valor pago foi: $x - Valor de troco: " . $y - $x;
-
+    echo "O valor do troco é: ".($pagamento - $preco);
+    
 
   ?>
+
+  
 
   <!-- Optional JavaScript; choose one of the two! -->
 
