@@ -27,14 +27,19 @@
     echo "<br>";
     if ($valor2 != 0){
       echo "Divisão".($valor1 / $valor2);
-    }
-    else{
+    }else{
       echo "Não é possivel divisão por zero!";
     }
     echo "<br>";
     echo !($variavel_valor1 % 2) ? "O valor 1 é par" : "O valor 1 é ímpar"; // Operador ternário
     echo "<br>";
     echo !($variavel_valor2 % 2) ? "O valor 2 é par" : "O valor 2 é ímpar";   
+
+    $i = 10;
+    echo "<br>";
+    echo "Valor de i:".(3 * $i++);
+    echo "<br>";
+    echo "Valor de i:".($i);
 
   ?>
 
