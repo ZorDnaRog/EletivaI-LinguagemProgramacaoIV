@@ -8,5 +8,4 @@
     } else{
         echo "Valor é igual a 10";
     }
-?>
-    
+?>    
