@@ -11,7 +11,34 @@
     <title>Lista de Exercicios 02</title>
   </head>
   <body>
-    <h1>Exercicio 02</h1>
+    <h1>Exercicio 02</h1>   
+
+    <?php  
+    
+      $valor_procurado = $_POST["valor"];
+      $arr = array();
+      for ($i=0; $i < 20; $i++){
+        $arr[] = rand(1,10);
+      }
+      
+      echo "Vetor Gerado:";
+      echo "<br>";
+
+      foreach($arr as $chave => $valor){
+        echo "[$chave]=>$valor";  
+        
+      }
+
+      echo "<br><br>";
+
+      foreach($arr as $chave => $valor){
+        if($valor == $valor_procurado){
+          echo "valor encontrado na posição = $chave";
+          echo "<br>";
+        }
+      }   
+    
+    ?>
 
     <!-- Optional JavaScript; choose one of the two! -->
 

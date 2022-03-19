@@ -10,8 +10,16 @@
 
     <title>Lista de Exercicios 02</title>
   </head>
-  <body>
+  <body class="container">
     <h1>Exercicio 02</h1>
+    <form action="resultado.php" method="post">
+      <div class ="row col-2">
+      <input type="number" name="valor" id="valor" class="form-control">
+        <div class="col -2 mt-3">
+          <button class="btn btn-primary">Sortear</button>        
+        </div>
+      </div>
+    </form>
 
     <!-- Optional JavaScript; choose one of the two! -->
 
