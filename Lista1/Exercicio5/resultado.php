@@ -10,20 +10,27 @@
 </head>
 
 <body class="container mt-5">
-  <h1>Resposta do Exercicio 04</h1>
+  <h1>Resposta do Exercicio 05</h1>
 
   <?php
-  $numero = $_POST['verificarnumero'];
 
-  if ($numero < 0) {
-    echo "O valor digitado é negativo";
-  } else if ($numero > 0) {
-    echo "O valor digitado é positivo";
+  $nota1 = $_POST['nota1'];
+  $nota2 = $_POST['nota2'];
+  $nota3 = $_POST['nota3'];
+  $nota4 = $_POST['nota4'];
+
+  $soma = $nota1 + $nota2 + $nota3 + $nota4;
+  $média = $soma / 4;
+
+  if ($média >= 7) {
+    echo "<br>O Aluno foi aprovado no curso!<br><br>Sua média foi: " . $média;
   } else {
-    echo "O valor digitado é Zero";
+    echo "<br>O Aluno foi reprovado no curso!<br><br>Sua média foi: " . $média;
   }
 
+
   ?>
+
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 

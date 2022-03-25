@@ -15,16 +15,16 @@
     <div class="container mt-5">
         <?php
 
-            $pagamento = $_POST["valorpago"];
-            $preco = $_POST["precoproduto"];
-            if($pagamento - $preco < 0){
-                echo "Compra cancelada, o valor pago é menor que o valor do produto!";
-            } else if ($pagamento - $preco > 0){
-                echo "Valor do Troco: ".$pagamento-$preco;
-            } else{
-                echo "O valor pago é o mesmo do produto. Não a troco para receber!";
-            }
-            
+        $pagamento = $_POST["valorpago"];
+        $preco = $_POST["precoproduto"];
+        if ($pagamento - $preco < 0) {
+            echo "Compra cancelada, o valor pago é menor que o valor do produto!";
+        } else if ($pagamento - $preco > 0) {
+            echo "Valor do Troco: " . $pagamento - $preco;
+        } else {
+            echo "O valor pago é o mesmo do produto. Não a troco para receber!";
+        }
+
 
         ?>
     </div>

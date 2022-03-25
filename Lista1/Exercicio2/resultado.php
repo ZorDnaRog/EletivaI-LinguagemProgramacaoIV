@@ -16,13 +16,13 @@
 
   function FormatarMoedaReais($numero)
   {
-   return "R$ ".number_format($numero, 2,',','.');
+    return "R$ " . number_format($numero, 2, ',', '.');
   }
 
   $valor = $_POST['valorporquilo'];
   $qtde = $_POST['qtdeproduto'];
   if ($valor >= 0 && $qtde >= 0) {
-    echo "Valor a pagar: " .FormatarMoedaReais(doubleval($valor * $qtde));    
+    echo "Valor a pagar: " . FormatarMoedaReais(doubleval($valor * $qtde));
   }
   ?>
 

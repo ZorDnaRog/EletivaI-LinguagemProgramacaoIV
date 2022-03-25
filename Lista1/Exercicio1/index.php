@@ -17,11 +17,11 @@
             <div class="row">
                 <div class="col-2">
                     <label for="valorpago" class="label-control">Valor Pago:</label>
-                    <input type="number" name="valorpago" id="valorpago" class="form-control"/>
+                    <input type="number" name="valorpago" id="valorpago" class="form-control" />
                 </div>
                 <div class="col-2">
                     <label for="precoproduto" class="label-control">Preço Produto:</label>
-                    <input type="numer" name="precoproduto" id="precoproduto" class="form-control"/>
+                    <input type="numer" name="precoproduto" id="precoproduto" class="form-control" />
                 </div>
             </div>
             <div class="row mt-3">
