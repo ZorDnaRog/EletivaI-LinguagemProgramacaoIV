@@ -14,17 +14,17 @@
     <form action="resultado.php" method="post">
         <div class="row">
             <div class="col">
-                <label for="valorporquilo" class="label-control">Valor por KG/R$: </label>
-                <input type="number" name="valorporquilo" id="valorporquilo" class="form-control" />
+                <label for="valorporquilo" class="label-control">Preço do Quilo do Produto</label>
+                <input type="number" name="valorporquilo" id="valorporquilo" class="form-control" required/>
             </div>
             <div class="col">
-                <label for="qtdeproduto" class="label-control">Quantidade comprada(Kg): </label>
-                <input type="numer" name="qtdeproduto" id="qtdeproduto" class="form-control" />
+                <label for="qtdeproduto" class="label-control">Quantidade consumida(Kg): </label>
+                <input type="numer" name="qtdeproduto" id="qtdeproduto" class="form-control" required/>
             </div>
         </div>
         <div class="row mt-5">
             <div class="col">
-                <button type="submit" class="btn btn-danger">
+                <button type="submit" class="btn btn-primary">
                     Calcular Preço
                 </button>
             </div>
