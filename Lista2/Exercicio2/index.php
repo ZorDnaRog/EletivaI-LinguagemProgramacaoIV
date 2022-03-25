@@ -47,12 +47,20 @@
       $vetor[$i] = $_POST["valor$i"];
     }
     $valor_procurado = $_POST['num_buscado'];
+    
     foreach ($vetor as $chave => $valor) {
+      $cont = 0;
       if ($valor == $valor_procurado) {
         echo "<br><br><br>";
-        echo "O valor $valor foi encontrado na posição $chave";
+        echo "O valor $valor_procurado foi encontrado na posição $chave";
         echo "<br>";
-      }
+        $cont++;
+      }      
+    }
+
+    if($cont == 0){
+      echo "<br><br><br>";
+      echo "O valor $valor_procurado não foi encontrado";
     }
   }
   ?>
