@@ -12,17 +12,17 @@
   <title>Lista de Exercicios 02</title>
 </head>
 
-<body class="container">
+<body class="container mt-5">
   <h1>Exercicio 01</h1>
   <form action="resultado.php" method="post">
     <div class="row">
       <?php
-        for ($i=1; $i<=10; $i++){
+      for ($i = 1; $i <= 10; $i++) {
       ?>
         <div class="col mt-3">
-          <label for="valor<?= $i?>" class="label-control">
+          <label for="valor<?= $i ?>" class="label-control">
             <?php $i; ?>
-            Valor <?=$i?>
+            Valor <?= $i ?>
           </label>
           <input type="number" name="valor<?= $i ?>" id="valor<?= $i ?>" class="form-control">
         </div>
