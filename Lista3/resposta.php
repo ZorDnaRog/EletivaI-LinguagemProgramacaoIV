@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
-    <title>Resposta do Exercicio 01</title>
+    <title>Lista de Exericios 03</title>
   </head>
   <body class="container mt-3">
     <h1>Resposta do Exercicio 01</h1>
@@ -13,9 +13,9 @@
     <?php
         function VerificarData($dia, $mes, $ano){
           if(checkdate($mes, $dia, $ano)) // Função checkdate trabalha com data no formato americano MES-DIA-ANO
-              echo "Data Valida";
+              echo "<br><br>A Data informada: ".$dia."/".$mes."/".$ano." é Valida";
           else
-              echo "Data Invalida";          
+          echo "<br><br>A Data informada:  ".$dia."/".$mes."/".$ano." é Inválida";        
         }
         
         $DiaInformadoPeloUsuario = $_POST['dia'];
