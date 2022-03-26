@@ -10,7 +10,7 @@
   <body class="container mt-3 ">
     <h1>Exercicio 01</h1>
 
-    <form action="resposta.php" method="POST">
+    <form action="resultado.php" method="POST">
         <div class="row">
             <div class="col">
                 <label for="dia" class="label-control">Dia:</label>
