@@ -14,15 +14,15 @@
 
   <?php
 
-  function VerificarData($dia, $mes, $ano)  
+  function VerificarData($dia, $mes, $ano)
   {
     $data = date("$ano-$mes-$dia");
-    $diasemana = date('w',strtotime($data));
-    $vetor_semana = array('Domingo', 'Segunda-Feira', 'Terça-Feira', 'Quarta-Feira', 'Quinta-Feira', 'Sexta-Feira', 'Sabado');   
+    $diasemana = date('w', strtotime($data));
+    $vetor_semana = array('Domingo', 'Segunda-Feira', 'Terça-Feira', 'Quarta-Feira', 'Quinta-Feira', 'Sexta-Feira', 'Sabado');
 
     if (checkdate($mes, $dia, $ano)) { // Função checkdate trabalha com data no formato americano MES-DIA-ANO
       echo "<br><br>A Data informada: " . $dia . "/" . $mes . "/" . $ano . " é Valida";
-      echo "<br>O dia da semana é: ".$vetor_semana[$diasemana];
+      echo "<br>O dia da semana é: " . $vetor_semana[$diasemana];
     } else {
       echo "<br><br>A Data informada:  " . $dia . "/" . $mes . "/" . $ano . " é Inválida";
     }
@@ -30,10 +30,10 @@
 
   $DiaInformadoPeloUsuario = $_POST['dia'];
   $MesInformadoPeloUsuario = $_POST['mes'];
-  $AnoInformadoPeloUsuario = $_POST['ano']; 
+  $AnoInformadoPeloUsuario = $_POST['ano'];
 
- 
-  
+
+
 
   VerificarData($DiaInformadoPeloUsuario, $MesInformadoPeloUsuario, $AnoInformadoPeloUsuario);
 
