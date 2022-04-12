@@ -19,7 +19,7 @@
         <input type="float" name="peso" id="peso" class="form-control" required>
       </div>
       <div class="col">
-        <label for="peso" class="label-control">Informe a Altura</label>
+        <label for="altura" class="label-control">Informe a Altura</label>
         <input type="float" name="altura" id="altura" class="form-control">
       </div>
       <div class="row mt-3">
