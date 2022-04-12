@@ -11,17 +11,24 @@
     <h1>Exercicio 01</h1>
 
     <form action="" method="POST">
-        <div class="row">          
-            <div class="col-4">
-                <label for="volta" class="label-control">Volta Nº<?php $i ?></label>
-                <input type="number" class="form-control" id="volta" name="volta"/>
-            </div>
-        </div>
-        <div class="row mt-3">
-          <div clas="col">
-            <button type="submit" class="btn btn-primary" name="lancar">Lançar</button>
-          </div>
-        </div>
+    <div class="col-7 container border mt-5">
+    <h3>Calculo do Tempo</h3>
+    <div class="row container mt-3">
+      <div class="col">        
+        <label for="Código" class="label-control">Tempo</label>
+        <input type="Código" class="form-control" id="Código" />      
+      </div>
+      <div class="col">        
+        <label for="Código" class="label-control">Volta</label>
+        <input type="Código" class="form-control" id="Código" />      
+      </div>
+      <div class="row mt-3">  
+      <div class="col mb-3" style="text-align: left">
+        <button class="col btn btn-danger">Inserir Tempo</button>
+        <button class="col btn btn-success" type="button">Exibir Resultados</button>
+      </div>     
+    </div>
+    </div>
     </form>
         
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
