@@ -11,21 +11,17 @@
     <h1>Exercicio 01</h1>
 
     <form action="" method="POST">
-    <div class="col-7 container border mt-5">
+    <div class="col-5 container border mt-5">
     <h3>Calculo do Tempo</h3>
     <div class="row container mt-3">
-      <div class="col">        
-        <label for="Código" class="label-control">Tempo</label>
-        <input type="Código" class="form-control" id="Código" />      
-      </div>
-      <div class="col">        
-        <label for="Código" class="label-control">Volta</label>
-        <input type="Código" class="form-control" id="Código" />      
-      </div>
+      <div class="col-5">        
+      <label for="tempo" class="label-control">Tempo da Volta</label>
+        <input type="time" name="tempo" id="tempo" class="form-control" required>      
+      </div>      
       <div class="row mt-3">  
       <div class="col mb-3" style="text-align: left">
-        <button class="col btn btn-danger">Inserir Tempo</button>
-        <button class="col btn btn-success" type="button">Exibir Resultados</button>
+        <button type="submit" name="inserir" class="col btn btn-danger">Inserir Tempo</button>
+        <button type="submit" name="exibir" class="col btn btn-success" type="button">Exibir Resultados</button>
       </div>     
     </div>
     </div>
