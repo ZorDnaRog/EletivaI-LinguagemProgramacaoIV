@@ -25,8 +25,7 @@
   }
 
   $posicao = 0;
-  $maior = 0;
-  //var_dump($vetor)
+  $maior = 0;  
   foreach ($vetor as $chave => $valor) {
     echo "Posição do vetor: $chave e seu valor é $valor";
     echo "<br>";
