@@ -1,5 +1,6 @@
 <?php
 
+
 require_once(__DIR__."/vendor/autoload.php");
 
 //Aqui recuperamos o que o usuario digita e qual metodo HTTP foi utilizado
@@ -15,6 +16,10 @@ $router = new \ProjetoPHP\Router($method, $path);
 $router->get("/ola-mundo", function(){
     return "Olá Mundo!";
 });
+
+$router->get("/example", 'ProjetoPHP\Controller\ExercicioController::show');
+
+$router->post('/example-result','ProjetoPHP\Controller\ExercicioController::showResult');
 
 //Adicionar as rotas validas acima
 
