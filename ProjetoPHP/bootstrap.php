@@ -7,8 +7,8 @@ require_once(__DIR__."/vendor/autoload.php");
 $method = $_SERVER['REQUEST_METHOD'];
 $path = $_SERVER['PATH_INFO'];
 
-//Instaciar classe Router
-$router = new ProjetoPHP\Router($method,$path);
+//Instanciar classe Router
+$router = new \ProjetoPHP\Router($method, $path);
 
 //Adicionar as rotas validas abaixo
 
