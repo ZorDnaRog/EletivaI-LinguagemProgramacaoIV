@@ -15,8 +15,8 @@ class Ponto
 
     public function CalcularDistancia(Ponto $p)
     {
-        $valorX = pow(($p->getX - $this->x), 2);
-        $valorY = pow(($p->getY - $this->y), 2);
+        $valorX = pow(($p->getX() - $this->x), 2);
+        $valorY = pow(($p->getY() - $this->y), 2);
         return sqrt($valorX + $valorY);
     }
 
@@ -27,10 +27,10 @@ class Ponto
         return sqrt($valorX + $valorY);
     }
 
-    public function CalcularDistancia3($x1, $x2, $y1, $y2)
+    public function CalcularDistancia3($x1, $y1, $x2, $y2)
     {
         $valorX = pow(($x2 - $x1), 2);
-        $valorY = pow(($y2 - $y2), 2);
+        $valorY = pow(($y2 - $y1), 2);
         return sqrt($valorX + $valorY);
     }
 
