@@ -19,9 +19,9 @@ class MestreDeObras extends Servente{
         $this->funcionario = $funcionario;
     }
 
-    public function FunComandado(){
+    public function AdcFuncionarios(){
         if ($this->funcionario >= 10){
-            $res = $this->getSalarioBase();
+            $res = $this->getFuncionario();
             return $res;
         }
         else{

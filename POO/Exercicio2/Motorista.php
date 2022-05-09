@@ -18,10 +18,4 @@ class Motorista extends Funcionario{
     public function setCarteira($carteira){
         $this->carteira = $carteira;
     }
-
-    public function Mostrar(){
-        echo "Nome: {$this->getNome()}</br>Codigo:  {$this->getCodigo()}</br>Salário:    {$this->getSalarioBase()}</br>Carteira: {$this->carteira}</br>";
-
-    }
-
 }

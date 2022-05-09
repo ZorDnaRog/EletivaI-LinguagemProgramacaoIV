@@ -10,8 +10,7 @@ class Servente extends Funcionario{
     }
 
     public function CalculoInsalubridade(){
-        $res = $this->getSalarioBase() * 0.05;
-        $res = $this->getSalarioBase() + $res;
+        $res = $this->getSalarioBase() * 0.05;        
         return $res;
     }
 

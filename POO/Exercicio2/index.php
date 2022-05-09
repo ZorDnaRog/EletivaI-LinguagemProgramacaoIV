@@ -18,28 +18,31 @@
     require_once("Motorista.php");
     require_once("MestreObras.php");
 
-    $fun1 = new Funcionario("Rafael Silva", 27952, 3000);
-    $fun1->Mostrar();
-    echo " Salario Líquido: " . $fun1->getSalarioLiquido();
+    $f1 = new Funcionario("Rafael Silva", 27952, 1000);
+    $f1->Mostrar();
+    echo " Salario Líquido: " . $f1->getSalarioLiquido();
     echo "</br></br>";
 
-    $fun2 = new Servente("Jean Feitosa", 27552, 1500);
-    $fun2->Mostrar();
-    echo " Salario Líquido: " . $fun2->getSalarioLiquido();
+    $f2 = new Servente("Jean Feitosa", 27552, 1000);
+    $f2->Mostrar();
+    $insalubridade = $f2->CalculoInsalubridade();       
+    echo "Insalubridade:    " .$insalubridade;
     echo "</br>";
-    echo "Insalubridade:    " . $fun2->CalculoInsalubridade();
+    echo " Salario Líquido: " . ($f2->getSalarioLiquido() + $insalubridade);
     echo "</br></br>";
 
-    $fun3 = new Motorista("Amanda Vieira", 24985, 3800, 86467731);
-    $fun3->Mostrar();
-    echo " Salario Líquido: " . $fun3->getSalarioLiquido();
-    echo "</br></br>";
-
-    $fun4 = new MestreDeObras("Wellington Teixeira", 24971, 9800, 10);
-    $fun4->Mostrar();
-    echo " Salario Líquido: " . $fun4->getSalarioLiquido();
+    $f3 = new Motorista("Amanda Vieira", 24985, 1000, 86467731);
+    $f3->Mostrar();
+    echo "Carteira de Motorista: ".$f3->getCarteira();
     echo "</br>";
-    echo "Funcionarios Supervisionados:  " . $fun4->FunComandado();
+    echo " Salario Líquido: " . $f3->getSalarioLiquido();
+    echo "</br></br>";
+
+    $f4 = new MestreDeObras("Wellington Teixeira", 24971, 1000, 10);
+    $f4->Mostrar();
+    echo " Salario Líquido: " . $f4->getSalarioLiquido();
+    echo "</br>";
+    echo "Funcionarios Supervisionados:  " . $f4->AdcFuncionarios();
     echo "</br></br>";
     ?>
 
