@@ -18,7 +18,7 @@
     require_once("Motorista.php");
     require_once("MestreObras.php");
 
-    $f1 = new Funcionario("Rafael Silva", 27952, 1000);
+    $f1 = new Funcionario("Rafael Silva", 27952, 10000);
     $f1->Mostrar();
     echo " Salario Líquido: " . $f1->getSalarioLiquido();
     echo "</br></br>";
@@ -38,9 +38,9 @@
     echo " Salario Líquido: " . $f3->getSalarioLiquido();
     echo "</br></br>";
 
-    $f4 = new MestreDeObras("Wellington Teixeira", 24971, 1000, 10);
+    $f4 = new MestreDeObras("Wellington Teixeira", 24971, 1000, 25);
     $f4->Mostrar();
-    echo " Salario Líquido: " . $f4->getSalarioLiquido();
+    echo " Salario Líquido: " . $f4->getSalarioLiquido() + $f4->getSalarioBase() * $f4->PercentualAdicional();
     echo "</br>";
     echo "Funcionarios Supervisionados:  " . $f4->AdcFuncionarios();
     echo "</br></br>";
