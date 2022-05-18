@@ -1,0 +1,15 @@
+{
+    "name": "wgste/listas-rotas",
+    "autoload": {
+        "psr-4": {
+            "Wgste\\ListasRotas\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Wellington Teixeira",
+            "email": "wgsteixeira@outlook.com"
+        }
+    ],
+    "require": {}
+}
