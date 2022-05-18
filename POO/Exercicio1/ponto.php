@@ -10,7 +10,7 @@ class Ponto
     {
         $this->setX($x);
         $this->setY($y);
-        self ::setContador();
+        self::setContador();
     }
 
     public function CalcularDistancia(Ponto $p)
