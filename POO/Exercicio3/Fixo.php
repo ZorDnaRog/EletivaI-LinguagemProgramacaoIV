@@ -2,20 +2,31 @@
 
 class Fixo extends Telefone
 {
-    public $custoMin;
+    public float $custoMin;
+    public float $tempLigacao;
 
-    public function __construct($ddd, $numTelefone,$custoMin){parent::__construct($ddd,$numTelefone);       
+    public function __construct($ddd, $numTelefone, $custoMin, $tempLigacao)
+    {
+        parent::__construct($ddd, $numTelefone);
         $this->setCustoMin($custoMin);
+        $this->setTempLigacao($tempLigacao);
     }
 
-    public function CalculaCusto($tempLigacao){
-        $valorLigacao = ($tempLigacao * $this->custoMin);
-        return $valorLigacao;
+    public function CalculaCusto($tempLigacao)
+    {
+        return "R$ " . number_format(($this->tempLigacao * $this->custoMin), 2, ',', '.');
     }
 
-    public function Mostrar(){
+
+    public function Mostrar()
+    {
         parent::Mostrar();
-        echo "</br>Custo Minuto:  {$this->custoMin}</br>";
+        echo "</br>";
+        echo "Custo Minuto: R$ ".number_format(($this->custoMin), 2, ',', '.');;
+        echo "</br>";
+        echo "Tempo da Ligação:  {$this->tempLigacao}";
+        echo "</br>";
+        echo "Custo da Ligação: {$this->CalculaCusto($this->tempLigacao)}";
     }
 
     public function getCustoMin()
@@ -25,5 +36,14 @@ class Fixo extends Telefone
     public function setCustoMin($custoMin)
     {
         $this->custoMin = $custoMin;
+    }
+
+    public function getTempLigacao()
+    {
+        return $this->tempLigacao;
+    }
+    public function setTempLigacao($tempLigacao)
+    {
+        $this->tempLigacao = $tempLigacao;
     }
 }

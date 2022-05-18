@@ -1,14 +1,13 @@
 <?php
-
-class PrePago extends Celular{
-
-    public function __construct($custoMin, $nomeOperadora){
-        $this->setCustoMin($custoMin);
-        $this->setNomeOperadora($nomeOperadora);        
+class PrePago extends Celular
+{
+    public function __construct($ddd, $numTelefone, $custoMin, $tempLigacao, $nomeOperadora)
+    {
+        parent::__construct($ddd, $numTelefone, $custoMin, $tempLigacao, $nomeOperadora);
     }
 
-    public function CalculaCusto($tempLigacao){
-        $valorLigacao = ($tempLigacao * ($this->custoMin + ($this->custoMin * 0.4)));
-        return $valorLigacao;
+    public function CalculaCusto($tempLigacao)
+    {
+        return "R$ " . number_format(($this->tempLigacao * ($this->custoMin + ($this->custoMin * 40 / 100))), 2, ',', '.');
     }
 }

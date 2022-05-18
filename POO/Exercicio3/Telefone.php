@@ -8,13 +8,17 @@ abstract class Telefone
 
     public function Mostrar()
     {
+        
         echo "</br>";
-        echo "DDD:  {$this->ddd}</br>Numero Telefone:  {$this->numTelefone}";        
+        echo "DDD:  {$this->ddd}";
+        echo "</br>";
+        echo "Numero Telefone:  {$this->numTelefone}";
     }
 
-    public function __construct($ddd, $numTelefone){
+    public function __construct($ddd, $numTelefone)
+    {
         $this->setDDD($ddd);
-        $this->setNumTelefone($numTelefone);        
+        $this->setNumTelefone($numTelefone);
     }
 
     public function getDDD()
