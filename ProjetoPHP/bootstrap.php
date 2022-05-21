@@ -18,8 +18,10 @@ $router->get("/ola-mundo", function(){
 });
 
 $router->get("/example", 'ProjetoPHP\Controller\ExercicioController::show');
-
 $router->post('/example-result','ProjetoPHP\Controller\ExercicioController::showResult');
+
+$router->get('/cliente/novo','Aluno\ProjetoPHP\Controller\ClientesController::abrirFormularioInserir');
+$router->post('/cliente/inserir','Aluno\ProjetoPHP\Controller\ClientesController::inserirClientes');
 
 //Adicionar as rotas validas acima
 
