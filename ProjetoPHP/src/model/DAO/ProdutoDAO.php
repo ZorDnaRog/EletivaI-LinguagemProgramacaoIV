@@ -1,9 +1,9 @@
 <?php
 
-namespace Aluno\ProjetoPHP\model\DAO;
+namespace ProjetoPHP\model\DAO;
 
-use Aluno\ProjetoPHP\model\Entity\Clientes;
-use Aluno\ProjetoPHP\model\Entity\Produto;
+use ProjetoPHP\model\Entity\Clientes;
+use ProjetoPHP\model\Entity\Produto;
 
 class ProdutoDAO{
 
@@ -52,6 +52,3 @@ class ProdutoDAO{
         }
     }
 }
-
-
-?>

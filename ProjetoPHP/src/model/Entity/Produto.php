@@ -1,6 +1,6 @@
 <?php
 
-namespace Aluno\ProjetoPHP\model\Entity;
+namespace ProjetoPHP\model\Entity;
 
 class Produto{
     private $id;
@@ -33,5 +33,3 @@ class Produto{
         $this->valor = $valor;
     }
 }
-
-?>

@@ -1,15 +1,15 @@
 <?php
 
-namespace Aluno\ProjetoPHP\Controller;
+namespace ProjetoPHP\Controller;
 
-use Aluno\ProjetoPHP\model\DAO\ClienteDAO;
-use Aluno\ProjetoPHP\model\Entity\Clientes;
+use ProjetoPHP\model\DAO\ClientesDAO;
+use ProjetoPHP\model\Entity\Clientes;
 
 class ClientesController
 {
     public static function abrirFormularioInserir()
     {
-        require_once "../src/View/inserir_cliente.php";
+        require_once("../src/View/inserir_cliente.php");
     }
 
     public static function inserirCliente()
@@ -18,7 +18,7 @@ class ClientesController
         $cliente->setEmail($_POST['email']);
         $cliente->setIdade($_POST['idade']);
         $cliente->setNome($_POST['nome']);
-        $dao = new ClienteDAO();
+        $dao = new ClientesDAO();
         if ($dao->inserir($cliente)) {
             return "Inserido com sucesso!!";
         } else {

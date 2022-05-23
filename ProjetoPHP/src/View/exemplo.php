@@ -10,16 +10,16 @@
 </head>
 
 <body class="container border mt-5">
-    <h1>Example</h1>
+    <h1>Exemplo</h1>
 
-    <form method="POST" action="/example-result">
+    <form method="POST" action="/exemplo-resultado">
         <div class="row">
             <div class="col">
-                <label class="label-control">Value 01 </label>
+                <label class="label-control">Valor 01 </label>
                 <input class="form-control" name="value1" type="text" />
             </div>
             <div class="col">
-                <label class="label-control">Value 02 </label>
+                <label class="label-control">Valor 02 </label>
                 <input class="form-control" name="value2" type="text" />
             </div>
         </div>

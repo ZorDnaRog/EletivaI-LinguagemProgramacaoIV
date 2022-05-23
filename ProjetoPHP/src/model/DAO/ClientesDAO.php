@@ -1,11 +1,11 @@
 <?php
 
-namespace Aluno\ProjetoPHP\model\DAO;
+namespace ProjetoPHP\model\DAO;
 
-use Aluno\ProjetoPHP\model\DAO\Conexao;
-use Aluno\ProjetoPHP\model\Entity\Clientes;
+use ProjetoPHP\model\DAO\Conexao;
+use ProjetoPHP\model\Entity\Clientes;
 
-class ClienteDAO{
+class ClientesDAO{
 
     public function inserir(Clientes $c){
         try{
@@ -71,6 +71,3 @@ class ClienteDAO{
         }
     }
 }
-
-
-?>

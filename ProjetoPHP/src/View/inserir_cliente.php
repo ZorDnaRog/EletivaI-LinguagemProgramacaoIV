@@ -9,7 +9,7 @@
     <title>Inserir Cliente</title>
 </head>
 
-<body>
+<body class="container mt-5 border">
     <h1>Inserir Cliente</h1>
 
     <form action="/cliente/inserir" method="POST">
@@ -26,7 +26,7 @@
                 <label for="idade" class="label-control">Informe a idade:</label>
                 <input type="number" class="form-control" name="idade" id="idade" />
             </div>
-            <div class="row">
+            <div class="row mt-1 mb-1">
                 <div class="col">
                     <button type="submit" class="btn btn-primary">Enviar</button>
                 </div>

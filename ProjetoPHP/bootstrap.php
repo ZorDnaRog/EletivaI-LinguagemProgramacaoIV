@@ -1,7 +1,7 @@
 <?php
 
 
-require_once(__DIR__."/vendor/autoload.php");
+require_once(__DIR__ . "/vendor/autoload.php");
 
 //Aqui recuperamos o que o usuario digita e qual metodo HTTP foi utilizado
 
@@ -13,24 +13,24 @@ $router = new \ProjetoPHP\Router($method, $path);
 
 //Adicionar as rotas validas abaixo
 
-$router->get("/ola-mundo", function(){
+$router->get("/ola-mundo", function () {
     return "Olá Mundo!";
 });
 
-$router->get("/example", 'ProjetoPHP\Controller\ExercicioController::show');
-$router->post('/example-result','ProjetoPHP\Controller\ExercicioController::showResult');
+$router->get("/exemplo", 'ProjetoPHP\Controller\ExercicioController::exibir');
+$router->post('/exemplo-resultado', 'ProjetoPHP\Controller\ExercicioController::exibirResultado');
 
-$router->get('/cliente/novo','Aluno\ProjetoPHP\Controller\ClientesController::abrirFormularioInserir');
-$router->post('/cliente/inserir','Aluno\ProjetoPHP\Controller\ClientesController::inserirClientes');
+$router->get('/cliente/novo', 'ProjetoPHP\Controller\ClientesController::abrirFormularioInserir');
+$router->post('/cliente/inserir', 'ProjetoPHP\Controller\ClientesController::inserirCliente');
 
 //Adicionar as rotas validas acima
 
 $result = $router->handler();
 
-if (!$result){
+if (!$result) {
     http_response_code(404);
     echo "Pagina não encontrada!!";
-    die();    
+    die();
 }
 
 echo $result($router->getParams());
