@@ -1,0 +1,16 @@
+{
+    "name": "wgste/lista1mvc",
+    "description": "Lista 1 Utilizando MVC",
+    "autoload": {
+        "psr-4": {
+            "Lista1MVC\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "wgsteixeira",
+            "email": "99516056+wgsteixeira@users.noreply.github.com"
+        }
+    ],
+    "require": {}
+}
