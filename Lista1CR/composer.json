@@ -1,0 +1,16 @@
+{
+    "name": "aluno/projeto-php",
+    "description": "Projeto PHP",
+    "autoload": {
+        "psr-4": {
+            "ProjetoPHP\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "wgsteixeira",
+            "email": "99516056+wgsteixeira@users.noreply.github.com"
+        }
+    ],
+    "require": {}
+}
