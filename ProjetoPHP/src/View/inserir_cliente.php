@@ -9,30 +9,33 @@
     <title>Inserir Cliente</title>
 </head>
 
-<body class="container mt-5 border">
-    <h1>Inserir Cliente</h1>
+<body>
+    <?php require_once "barra_navegacao.php"; ?>
+    <div class="container mt-5 border">
+        <h1>Inserir Cliente</h1>
 
-    <form action="/cliente/inserir" method="POST">
-        <div class="row">
-            <div class="col-5">
-                <label for="nome" class="label-control">Informe o nome:</label>
-                <input type="text" class="form-control" name="nome" id="nome" />
-            </div>
-            <div class="col-5">
-                <label for="email" class="label-control">Informe o email:</label>
-                <input type="text" class="form-control" name="email" id="email" />
-            </div>
-            <div class="col-2">
-                <label for="idade" class="label-control">Informe a idade:</label>
-                <input type="number" class="form-control" name="idade" id="idade" />
-            </div>
-            <div class="row mt-1 mb-1">
-                <div class="col">
-                    <button type="submit" class="btn btn-primary">Enviar</button>
+        <form action="/cliente/inserir" method="POST">
+            <div class="row">
+                <div class="col-5">
+                    <label for="nome" class="label-control">Informe o nome:</label>
+                    <input type="text" class="form-control" name="nome" id="nome" />
+                </div>
+                <div class="col-5">
+                    <label for="email" class="label-control">Informe o email:</label>
+                    <input type="text" class="form-control" name="email" id="email" />
+                </div>
+                <div class="col-2">
+                    <label for="idade" class="label-control">Informe a idade:</label>
+                    <input type="number" class="form-control" name="idade" id="idade" />
+                </div>
+                <div class="row mt-1 mb-1">
+                    <div class="col">
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    </div>
                 </div>
             </div>
-        </div>
-    </form>
+        </form>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 

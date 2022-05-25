@@ -23,6 +23,8 @@ $router->post('/exemplo-resultado', 'ProjetoPHP\Controller\ExercicioController::
 $router->get('/cliente/novo', 'ProjetoPHP\Controller\ClientesController::abrirFormularioInserir');
 $router->post('/cliente/inserir', 'ProjetoPHP\Controller\ClientesController::inserirCliente');
 
+$router->get('/clientes', 'ProjetoPHP\Controller\ClientesController::abrirListaClientes');
+
 //Adicionar as rotas validas acima
 
 $result = $router->handler();
