@@ -2,52 +2,70 @@
 
 namespace ProjetoPHP\model\DAO;
 
-use ProjetoPHP\model\Entity\Clientes;
 use ProjetoPHP\model\Entity\Produto;
 
-class ProdutoDAO{
-
-    public function inserir(Produto $p){
-        try{
-            $sql = "INSERT INTO `produto`(`nome`, `descricao`, `valor`) VALUES (:nome, :descricao, :valor)";
-
-        }catch(\Exception $e){
+class ProdutoDAO
+{
+    public function inserir(Produto $c)
+    {
+        try {
+            $sql = "INSERT INTO `produtos`(`nome`, `descricao`, `valor`) VALUES (:nome, :descricao, :valor)";
+            $p = Conexao::conectar()->prepare($sql);
+            $p->bindValue(":nome", $c->getNome());
+            $p->bindValue(":descricao", $c->getDescricao());
+            $p->bindValue(":valor", $c->getValor());
+            return $p->execute();
+        } catch (\Exception $e) {
             return false;
         }
     }
 
-    public function alterar(Produto $p){
-        try{
-            $sql = "UPDATE `produto` SET `nome`= :nome,`descricao`= :descricao,`valor`= :valor WHERE id = :id";
-
-        }catch(\Exception $e){
+    public function alterar(Produto $c)
+    {
+        try {
+            $sql = "UPDATE `produtos` SET `nome`= :nome,`descricao`= :descricao,`valor`=:valor WHERE id = :id";
+            $p = Conexao::conectar()->prepare($sql);
+            $p->bindValue(":nome", $c->getNome());
+            $p->bindValue(":descricao", $c->getDescricao());
+            $p->bindValue(":valor", $c->getValor());
+            $p->bindValue(":id", $c->getId());
+            return $p->execute();
+        } catch (\Exception $e) {
             return false;
         }
     }
 
-    public function excluir($id){
-        try{
-            $sql = "DELETE FROM `produto` WHERE id = :id";
-
-        }catch(\Exception $e){
+    public function excluir($id)
+    {
+        try {
+            $sql = "DELETE FROM `produtos` WHERE id = :id";
+            $p = Conexao::conectar()->prepare($sql);
+            $p->bindValue(":id", $id);
+            return $p->execute();
+        } catch (\Exception $e) {
             return false;
         }
     }
 
-    public function consultar(){
-        try{
-            $sql = "SELECT * FROM produto";
-
-        }catch(\Exception $e){
+    public function consultar()
+    {
+        try {
+            $sql = "SELECT * FROM produtos";
+            return Conexao::conectar()->query($sql);
+        } catch (\Exception $e) {
             return false;
         }
     }
 
-    public function consultarPorId($id){
-        try{
-            $sql = "SELECT * FROM produto WHERE id = :id";
-
-        }catch(\Exception $e){
+    public function consultarPorId($id)
+    {
+        try {
+            $sql = "SELECT * FROM produtos WHERE id = :id";
+            $p = Conexao::conectar()->prepare($sql);
+            $p->bindValue(":id", $id);
+            $p->execute();
+            return $p->fetch();
+        } catch (\Exception $e) {
             return false;
         }
     }

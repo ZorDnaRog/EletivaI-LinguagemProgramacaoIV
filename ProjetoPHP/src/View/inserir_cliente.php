@@ -26,7 +26,7 @@
                 </div>
                 <div class="col-2">
                     <label for="idade" class="label-control">Informe a idade:</label>
-                    <input type="number" class="form-control" name="idade" id="idade" />
+                    <input type="text" class="form-control" name="idade" id="idade" />
                 </div>
                 <div class="row mt-1 mb-1">
                     <div class="col">
