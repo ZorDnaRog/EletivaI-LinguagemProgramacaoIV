@@ -28,7 +28,7 @@
                     <label for="idade" class="label-control">Informe a idade:</label>
                     <input type="text" class="form-control" name="idade" id="idade" />
                 </div>
-                <div class="row mt-1 mb-1">
+                <div class="row mt-1 mb-3">
                     <div class="col">
                         <button type="submit" class="btn btn-primary">Enviar</button>
                     </div>
