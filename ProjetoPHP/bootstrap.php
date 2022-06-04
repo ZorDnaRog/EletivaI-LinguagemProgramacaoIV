@@ -24,6 +24,7 @@ $router->get("/exemplo", 'ProjetoPHP\Controller\ExercicioController::exibir');
 $router->post('/exemplo-resultado', 'ProjetoPHP\Controller\ExercicioController::exibirResultado');
 //Controladores Exercicio Controller
 
+
 //Controladores Clientes Controller
 $router->get('/cliente/novo', 'ProjetoPHP\Controller\ClientesController::abrirFormularioInserir');
 $router->post('/cliente/inserir', 'ProjetoPHP\Controller\ClientesController::inserirCliente');
@@ -32,6 +33,7 @@ $router->get('/cliente/alterar/{id}', 'ProjetoPHP\Controller\ClientesController:
 $router->post('/cliente/editar/{id}', 'ProjetoPHP\Controller\ClientesController::editarCliente');
 $router->get('/cliente/excluir/{id}', 'ProjetoPHP\Controller\ClientesController::excluirCliente');
 //Controladores Clientes Controller
+
 
 //Controladores Produtos Controller
 $router->get('/produto/novo', 'ProjetoPHP\Controller\ProdutosController::abrirFormularioInserir');
@@ -42,6 +44,7 @@ $router->post('/produto/editar/{id}', 'ProjetoPHP\Controller\ProdutosController:
 $router->get('/produto/excluir/{id}', 'ProjetoPHP\Controller\ProdutosController::excluirProduto');
 //Controladores Produtos Controller
 
+$router->get("/home", 'ProjetoPHP\Controller\HomeController::exibirHome');
 
 //Adicionar as rotas validas acima
 
